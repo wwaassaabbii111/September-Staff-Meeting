@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>September Event | 4 Clarke Cardiac</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Apple-style typography gradients */
+        .apple-gradient-light {
+            background: linear-gradient(135deg, #1d1d1f 0%, #434345 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .apple-gradient-dark {
+            background: linear-gradient(135deg, #ffffff 0%, #a1a1a6 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .gold-gradient {
+            background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* Custom Badges */
+        .pro-badge {
+            border: 1px solid #86868b;
+            color: #86868b;
+            border-radius: 9999px;
+            padding: 6px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            display: inline-block;
+        }
+
+        .pro-badge-dark {
+            border: 1px solid #a1a1a6;
+            color: #a1a1a6;
+            border-radius: 9999px;
+            padding: 6px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            display: inline-block;
+        }
+
+        /* Scroll Reveal Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+        .reveal-delay-5 { transition-delay: 0.5s; }
+
+        .scale-reveal {
+            opacity: 0;
+            transform: scale(0.95) translateY(20px);
+            transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .scale-reveal.active {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+
+        /* Suspense Reveal for Employee of the Month */
+        .suspense-reveal {
+            opacity: 0;
+            filter: blur(20px);
+            transform: scale(1.1);
+            transition: all 2s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .suspense-reveal.active {
+            opacity: 1;
+            filter: blur(0);
+            transform: scale(1);
+        }
+
+        .delay-super-long { transition-delay: 1.2s; }
+
+        /* Section Layouts */
+        .section-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 6rem 1.5rem;
+        }
+        
+        .content-width {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="section-container items-center text-center">
+        <div class="relative inline-flex flex-col items-center mb-8 reveal reveal-delay-1 hero-trigger">
+            <!-- Apple-style Stem (CSS shape) Centered and Separated -->
+            <div style="border-radius: 100% 0;" class="w-5 h-5 md:w-7 md:h-7 bg-white transform flex-shrink-0 -rotate-12 -mb-1 md:-mb-3 drop-shadow-lg z-10"></div>
+            <!-- Heart Logo -->
+            <i class="fa-solid fa-heart text-7xl md:text-9xl text-white drop-shadow-2xl z-0"></i>
+        </div>
+        <h1 class="text-7xl md:text-[140px] font-black tracking-tighter apple-gradient-dark leading-none reveal reveal-delay-2 hero-trigger">
+            Welcome.
+        </h1>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="section-container items-center text-center">
+        <div class="reveal">
+            <div class="pro-badge-dark mb-8">4 Clarke '27</div>
+            <h1 class="text-6xl md:text-8xl font-bold tracking-tighter apple-gradient-dark mb-6">
+                September Event.
+            </h1>
+            <p class="text-3xl md:text-5xl font-medium text-[#a1a1a6] tracking-tight">
+                Pro Max Performance.
+            </p>
+        </div>
+    </section>
+
+    <!-- Award Section -->
+    <section class="section-container bg-white text-[#1d1d1f]">
+        <div class="content-width flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full md:w-1/2 reveal">
+                <div class="w-full aspect-[4/3] bg-[#f5f5f7] rounded-3xl shadow-2xl flex items-center justify-center p-12 md:p-20 border border-[#d2d2d7]">
+                    <img src="image.png" alt="DNV Healthcare Logo" class="w-full max-w-sm h-auto object-contain" onerror="this.outerHTML='<div class=\'text-center\'><p class=\'text-6xl font-black text-[#1d1d1f] tracking-tighter\'>DNV</p><div class=\'w-full h-2 bg-gradient-to-r from-blue-500 to-green-500 mt-2\'></div></div>'">
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 flex flex-col justify-center reveal reveal-delay-1">
+                <p class="text-xl md:text-2xl font-semibold text-[#86868b] mb-4 uppercase tracking-widest">
+                    DNV Healthcare 2026
+                </p>
+                <h2 class="text-5xl md:text-7xl font-bold tracking-tighter apple-gradient-light mb-8 leading-tight">
+                    Innovation of the Year.
+                </h2>
+                <p class="text-2xl font-medium text-[#1d1d1f] leading-relaxed mb-6">
+                    <span class="font-bold">Winning Project:</span><br>
+                    Solving the Healthcare Innovation Paradox. Putting Charge Nurses Back in Charge Through the Nursing OS.
+                </p>
+                <p class="text-xl font-normal text-[#86868b] leading-relaxed">
+                    <span class="font-semibold text-[#1d1d1f]">Official Delegates:</span><br>
+                    Christopher Scott & Raynell Ward
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employee of the Month -->
+    <section class="section-container bg-[#000000] text-center items-center relative overflow-hidden">
+        <!-- Subtle background glow -->
+        <div class="absolute inset-0 flex justify-center items-center opacity-20 pointer-events-none">
+            <div class="w-[600px] h-[600px] bg-white rounded-full blur-[120px]"></div>
+        </div>
+        
+        <div class="z-10">
+            <div class="reveal">
+                <div class="pro-badge-dark border-white/30 text-white/50 mb-8">Pro Performance</div>
+                <p class="text-3xl md:text-4xl font-medium text-[#a1a1a6] tracking-tight mb-4">
+                    The MVP of September.
+                </p>
+                <p class="text-xl md:text-2xl font-bold text-white uppercase tracking-[0.3em] mb-12">
+                    Employee of the Month
+                </p>
+            </div>
+            
+            <div class="suspense-reveal delay-super-long">
+                <h2 class="text-7xl md:text-[140px] font-black tracking-tighter apple-gradient-dark mb-6 leading-none">
+                    Priscilla Gamundi.
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Hires -->
+    <section class="section-container bg-white">
+        <div class="content-width">
+            <h2 class="text-5xl md:text-7xl font-bold tracking-tighter text-[#1d1d1f] mb-16 reveal">
+                Expanding the ecosystem.
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="reveal reveal-delay-1">
+                    <p class="text-lg font-semibold text-[#86868b] mb-6 border-b border-[#d2d2d7] pb-4 uppercase tracking-wider">
+                        Registered Nurses
+                    </p>
+                    <div class="space-y-4">
+                        <p class="text-2xl font-semibold text-[#1d1d1f]">Yurisleidy Ruiz Acosta <span class="text-sm font-medium text-[#86868b] block">(Experienced RN)</span></p>
+                        <p class="text-2xl font-semibold text-[#1d1d1f]">Angelica Hamilton <span class="text-sm font-medium text-[#86868b] block">(RN Resident)</span></p>
+                    </div>
+                </div>
+                
+                <div class="reveal reveal-delay-2">
+                    <p class="text-lg font-semibold text-[#86868b] mb-6 border-b border-[#d2d2d7] pb-4 uppercase tracking-wider">
+                        Clinical Partners
+                    </p>
+                    <div class="space-y-4">
+                        <p class="text-2xl font-semibold text-[#1d1d1f]">Driana Drice</p>
+                    </div>
+                </div>
+                
+                <div class="reveal reveal-delay-3">
+                    <p class="text-lg font-semibold text-[#86868b] mb-6 border-b border-[#d2d2d7] pb-4 uppercase tracking-wider">
+                        Nurse Interns
+                    </p>
+                    <div class="space-y-4">
+                        <p class="text-2xl font-semibold text-[#1d1d1f]">Isabella Silva</p>
+                        <p class="text-2xl font-semibold text-[#1d1d1f]">Nieves Hernandez</p>
+                        <p class="text-2xl font-semibold text-[#1d1d1f]">Ana Larrechea Castro</p>
+                        <p class="text-2xl font-semibold text-[#1d1d1f]">Melanie Ramirez</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Birthdays Section -->
+    <section class="section-container bg-[#000000]">
+        <div class="content-width text-center">
+            <h2 class="text-6xl md:text-8xl font-bold tracking-tighter apple-gradient-dark mb-20 reveal">
+                Happy Birthday.
+            </h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-8 text-left max-w-5xl mx-auto">
+                <!-- Group 1 -->
+                <div class="space-y-6 reveal reveal-delay-1">
+                    <p class="text-xl md:text-2xl font-semibold text-[#f5f5f7]">Jefferson Cassion <span class="text-[#86868b] font-normal ml-2">9/4</span></p>
+                    <p class="text-xl md:text-2xl font-semibold text-[#f5f5f7]">Topaz Duncan <span class="text-[#86868b] font-normal ml-2">9/8</span></p>
+                    <p class="text-xl md:text-2xl font-semibold text-[#f5f5f7]">Justin Cagulada <span class="text-[#86868b] font-normal ml-2">9/10</span></p>
+                </div>
+                <!-- Group 2 -->
+                <div class="space-y-6 reveal reveal-delay-2">
+                    <p class="text-xl md:text-2xl font-semibold text-[#f5f5f7]">Chris Scott <span class="text-[#86868b] font-normal ml-2">9/12</span></p>
+                    <p class="text-xl md:text-2xl font-semibold text-[#f5f5f7]">Amaya Brown <span class="text-[#86868b] font-normal ml-2">9/13</span></p>
+                    <p class="text-xl md:text-2xl font-semibold text-[#f5f5f7]">Shadrach Waugh <span class="text-[#86868b] font-normal ml-2">9/16</span></p>
+                </div>
+                <!-- Group 3 -->
+                <div class="space-y-6 reveal reveal-delay-3">
+                    <p class="text-xl md:text-2xl font-semibold text-[#f5f5f7]">Dailyn Echaveria <span class="text-[#86868b] font-normal ml-2">9/19</span></p>
+                    <p class="text-xl md:text-2xl font-semibold text-[#f5f5f7]">Ana Aymerich <span class="text-[#86868b] font-normal ml-2">9/20</span></p>
+                    <p class="text-xl md:text-2xl font-semibold text-[#f5f5f7]">Felix Brechtefeld <span class="text-[#86868b] font-normal ml-2">9/21</span></p>
+                </div>
+                <!-- Group 4 -->
+                <div class="space-y-6 reveal reveal-delay-1">
+                    <p class="text-xl md:text-2xl font-semibold text-[#f5f5f7]">Sophia Viteri <span class="text-[#86868b] font-normal ml-2">9/23</span></p>
+                    <p class="text-xl md:text-2xl font-semibold text-[#f5f5f7]">Jessi Garzon <span class="text-[#86868b] font-normal ml-2">9/26</span></p>
+                    <p class="text-xl md:text-2xl font-semibold text-[#f5f5f7]">Maria Bravo Bustelo <span class="text-[#86868b] font-normal ml-2">9/29</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audits Section (Number Sprinting) -->
+    <section class="section-container bg-white">
+        <div class="content-width">
+            <h2 class="text-5xl md:text-7xl font-bold tracking-tighter text-[#1d1d1f] mb-16 reveal">
+                By the numbers.
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div class="reveal counter-wrap">
+                    <p class="text-7xl md:text-9xl font-black tracking-tighter text-[#1d1d1f] leading-none mb-4"><span class="counter" data-target="90">0</span>%</p>
+                    <p class="text-2xl font-medium text-[#86868b]">Daily weights. <span class="text-green-600 font-semibold">At Goal!</span></p>
+                </div>
+                <div class="reveal counter-wrap reveal-delay-1">
+                    <p class="text-7xl md:text-9xl font-black tracking-tighter text-[#1d1d1f] leading-none mb-4"><span class="counter" data-target="86">0</span>%</p>
+                    <p class="text-2xl font-medium text-[#86868b]">Pain reassessment compliance. (Goal: 90%)</p>
+                </div>
+                <div class="reveal counter-wrap reveal-delay-2">
+                    <p class="text-7xl md:text-9xl font-black tracking-tighter text-[#1d1d1f] leading-none mb-4"><span class="counter" data-target="78">0</span>%</p>
+                    <p class="text-2xl font-medium text-[#86868b]">Critical value reporting. (Up from 65%)</p>
+                </div>
+                <div class="reveal counter-wrap reveal-delay-3">
+                    <p class="text-7xl md:text-9xl font-black tracking-tighter text-[#1d1d1f] leading-none mb-4"><span class="counter" data-target="95">0</span>%</p>
+                    <p class="text-2xl font-medium text-[#86868b]">Sitter documentation. <br><span class="text-blue-600">Task eliminated! Integrated in workflow.</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HCAHPS Section (Number Sprinting Cards) -->
+    <section class="section-container bg-[#f5f5f7]">
+        <div class="content-width">
+            <h2 class="text-5xl md:text-7xl font-bold tracking-tighter text-[#1d1d1f] mb-16 reveal">
+                The User Experience.
+            </h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-[24px] p-10 text-center shadow-sm scale-reveal counter-wrap">
+                    <p class="text-6xl font-black tracking-tighter text-[#1d1d1f] mb-4"><span class="counter" data-target="92">0</span>%</p>
+                    <p class="text-lg font-semibold text-[#1d1d1f] mb-2">Discharge Instructions</p>
+                    <p class="text-sm font-medium text-[#86868b]">Continue using DC suite.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white rounded-[24px] p-10 text-center shadow-sm scale-reveal reveal-delay-1 counter-wrap">
+                    <p class="text-6xl font-black tracking-tighter text-[#1d1d1f] mb-4"><span class="counter" data-target="87">0</span>%</p>
+                    <p class="text-lg font-semibold text-[#1d1d1f] mb-2">Nursing Communication</p>
+                    <p class="text-sm font-medium text-[#86868b]">Great work, keep it up!</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white rounded-[24px] p-10 text-center shadow-sm border border-orange-200 scale-reveal reveal-delay-2 counter-wrap">
+                    <p class="text-6xl font-black tracking-tighter text-[#1d1d1f] mb-4"><span class="counter" data-target="60">0</span>%</p>
+                    <p class="text-lg font-semibold text-[#1d1d1f] mb-2">Staff Responsiveness</p>
+                    <p class="text-sm font-medium text-orange-600">Significant opportunity.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white rounded-[24px] p-10 text-center shadow-sm border border-red-200 scale-reveal reveal-delay-3 counter-wrap">
+                    <p class="text-6xl font-black tracking-tighter text-[#1d1d1f] mb-4"><span class="counter" data-target="55">0</span>%</p>
+                    <p class="text-lg font-semibold text-[#1d1d1f] mb-2">Medication Comms</p>
+                    <p class="text-sm font-medium text-red-500">Huge attention needed.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center reveal">
+                <p class="text-xl font-medium text-[#86868b] max-w-3xl mx-auto">
+                    We know <em class="text-[#1d1d1f]">how</em> to talk to our patients. Our focus must now be refining how we make them <em class="text-[#1d1d1f]">feel</em> during interactions, and exactly what we communicate about medications.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Diagnostics -->
+    <section class="section-container bg-white">
+        <div class="content-width">
+            <h2 class="text-5xl md:text-7xl font-bold tracking-tighter text-[#1d1d1f] mb-16 reveal">
+                System Diagnostics.
+            </h2>
+            
+            <div class="flex flex-col md:flex-row gap-16">
+                <div class="flex-1">
+                    <p class="text-2xl font-bold text-[#1d1d1f] mb-8 border-b-2 border-[#1d1d1f] pb-4 reveal">
+                        Workspace Findings
+                    </p>
+                    <ul class="space-y-6 text-xl font-medium text-[#86868b]">
+                        <li class="flex items-start gap-4 reveal reveal-delay-1"><i class="fa-solid fa-triangle-exclamation text-orange-500 mt-1"></i> Unlabeled strips.</li>
+                        <li class="flex items-start gap-4 reveal reveal-delay-2"><i class="fa-solid fa-triangle-exclamation text-orange-500 mt-1"></i> Lab vials (expired and recent) in drawers and bags.</li>
+                        <li class="flex items-start gap-4 reveal reveal-delay-3"><i class="fa-solid fa-triangle-exclamation text-orange-500 mt-1"></i> Patient pill cutters left out and unlabeled on stations/WOWs.</li>
+                        <li class="flex items-start gap-4 reveal reveal-delay-4"><i class="fa-solid fa-triangle-exclamation text-orange-500 mt-1"></i> Sharps abandoned on WOWs.</li>
+                        <li class="flex items-start gap-4 reveal reveal-delay-5"><i class="fa-solid fa-triangle-exclamation text-orange-500 mt-1"></i> Supplies shoved haphazardly into drawers.</li>
+                    </ul>
+                </div>
+                <div class="flex-1">
+                    <p class="text-2xl font-bold text-[#1d1d1f] mb-8 border-b-2 border-[#1d1d1f] pb-4 reveal">
+                        Hardware & Protocols
+                    </p>
+                    <ul class="space-y-6 text-xl font-medium text-[#86868b]">
+                        <li class="flex items-start gap-4 reveal reveal-delay-1"><i class="fa-solid fa-battery-quarter text-red-500 mt-1"></i> Poor telemetry battery change compliance.</li>
+                        <li class="flex items-start gap-4 reveal reveal-delay-2"><i class="fa-solid fa-wheelchair text-[#1d1d1f] mt-1"></i> Poor mobility tool compliance.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Responsiveness & Handoffs -->
+    <section class="section-container bg-[#f5f5f7]">
+        <div class="content-width">
+            <div class="pro-badge mb-6 reveal">Focus Area</div>
+            <h2 class="text-5xl md:text-7xl font-bold tracking-tighter text-[#1d1d1f] mb-16 reveal">
+                Responsiveness & Handoffs.
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-3xl p-10 scale-reveal">
+                    <p class="text-2xl font-bold text-[#1d1d1f] mb-6"><i class="fa-solid fa-bell text-blue-500 mr-2"></i> Call Lights</p>
+                    <ul class="space-y-4 text-lg font-medium text-[#86868b]">
+                        <li class="reveal reveal-delay-1">Answer all lights (1-minute rule).</li>
+                        <li class="reveal reveal-delay-2">Not assigned? Answer it anyway.</li>
+                        <li class="reveal reveal-delay-3">Acknowledge delays and communicate the plan.</li>
+                        <li class="reveal reveal-delay-4">CPs: Verify every patient's call bell works.</li>
+                    </ul>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white rounded-3xl p-10 scale-reveal reveal-delay-1">
+                    <p class="text-2xl font-bold text-[#1d1d1f] mb-6"><i class="fa-solid fa-users text-purple-500 mr-2"></i> Rounding</p>
+                    <ul class="space-y-4 text-lg font-medium text-[#86868b]">
+                        <li class="reveal reveal-delay-1">RNs and CPs round one hour before shift change.</li>
+                        <li class="reveal reveal-delay-2">Communicate outstanding needs with RNs.</li>
+                    </ul>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white rounded-3xl p-10 scale-reveal reveal-delay-2">
+                    <p class="text-2xl font-bold text-[#1d1d1f] mb-6"><i class="fa-solid fa-sync text-green-500 mr-2"></i> Shift Change</p>
+                    <ul class="space-y-4 text-lg font-medium text-[#86868b]">
+                        <li class="reveal reveal-delay-1">Bedside report readiness at 6:00.</li>
+                        <li class="reveal reveal-delay-2">APs assist with calls during report.</li>
+                        <li class="reveal reveal-delay-3">All hands answer incoming calls during phone assignment.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Devices & Rauland Borg -->
+    <section class="section-container bg-white">
+        <div class="content-width">
+            <h2 class="text-5xl md:text-7xl font-bold tracking-tighter text-[#1d1d1f] mb-16 reveal">
+                Rauland Borg & Devices.
+            </h2>
+            
+            <div class="flex flex-col md:flex-row gap-16 items-start">
+                <div class="flex-1">
+                    <div class="reveal">
+                        <p class="text-sm font-bold text-[#86868b] mb-4 uppercase tracking-widest">System Architecture</p>
+                        <p class="text-4xl font-bold text-[#1d1d1f] mb-8">Assignments & Edu.</p>
+                    </div>
+                    <ul class="space-y-6 text-xl font-medium text-[#1d1d1f]">
+                        <li class="flex items-center gap-4 reveal reveal-delay-1"><div class="w-2 h-2 rounded-full bg-[#1d1d1f]"></div> AP assignments completed by 6:15 AM/PM.</li>
+                        <li class="flex items-center gap-4 reveal reveal-delay-2"><div class="w-2 h-2 rounded-full bg-[#1d1d1f]"></div> Update dynamically for staffing or phone changes.</li>
+                        <li class="flex items-center gap-4 reveal reveal-delay-3"><div class="w-2 h-2 rounded-full bg-[#1d1d1f]"></div> Resource RNs must complete system education.</li>
+                    </ul>
+                </div>
+                
+                <div class="hidden md:block w-px bg-[#d2d2d7] self-stretch mx-4 reveal"></div>
+                <hr class="md:hidden w-full border-[#d2d2d7] reveal">
+                
+                <div class="flex-1">
+                    <div class="reveal reveal-delay-1">
+                        <p class="text-sm font-bold text-[#86868b] mb-4 uppercase tracking-widest">Hardware</p>
+                        <p class="text-4xl font-bold text-[#1d1d1f] mb-8">Phones & Batteries.</p>
+                    </div>
+                    <ul class="space-y-6 text-xl font-medium text-[#1d1d1f]">
+                        <li class="flex items-center gap-4 reveal reveal-delay-2"><div class="w-2 h-2 rounded-full bg-[#1d1d1f]"></div> APs assign phones at 6:45 AM/PM.</li>
+                        <li class="flex items-center gap-4 reveal reveal-delay-3"><div class="w-2 h-2 rounded-full bg-[#1d1d1f]"></div> APs replace batteries at 6:00 AM/PM.</li>
+                        <li class="flex items-center gap-4 reveal reveal-delay-4"><div class="w-2 h-2 rounded-full bg-[#1d1d1f]"></div> Report malfunctioning phones immediately.</li>
+                        <li class="flex items-center gap-4 reveal reveal-delay-5"><div class="w-2 h-2 rounded-full bg-[#1d1d1f]"></div> Return extra phones to hub at shift end.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updates Section -->
+    <section class="section-container bg-[#f5f5f7]">
+        <div class="content-width">
+            <h2 class="text-5xl md:text-7xl font-bold tracking-tighter text-[#1d1d1f] mb-16 reveal">
+                System Updates.
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl p-10 shadow-sm scale-reveal">
+                    <p class="text-2xl font-bold text-[#1d1d1f] mb-6">Hardware</p>
+                    <div class="text-lg font-medium text-[#86868b] leading-relaxed space-y-4">
+                        <p class="reveal reveal-delay-1">Lab printers are secured onto the WOWs.</p>
+                        <p class="reveal reveal-delay-2">Blanket warmer is elevated and functional.</p>
+                        <p class="reveal reveal-delay-3">Multiple broken microwaves pending replacement delivery.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl p-10 shadow-sm scale-reveal reveal-delay-1">
+                    <p class="text-2xl font-bold text-[#1d1d1f] mb-6">UKG Integration</p>
+                    <div class="text-lg font-medium text-[#86868b] leading-relaxed space-y-4">
+                        <p class="reveal reveal-delay-1">This October schedule is the very first published in UKG.</p>
+                        <p class="reveal reveal-delay-2">Please verify and let us know of any missed schedule requests this Sunday.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl p-10 shadow-sm scale-reveal reveal-delay-2">
+                    <p class="text-2xl font-bold text-[#1d1d1f] mb-6">Compensation & PDRP</p>
+                    <div class="text-lg font-medium text-[#86868b] leading-relaxed space-y-4">
+                        <p class="reveal reveal-delay-1">Evaluation cycle ends today.</p>
+                        <p class="reveal reveal-delay-2">Merit raises effective October 8.</p>
+                        <p class="reveal reveal-delay-3">PDRP season is upon us! Reach out to leadership for packet assistance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Finale Section -->
+    <section class="section-container relative text-center overflow-hidden" style="background: linear-gradient(135deg, #111 0%, #222 100%);">
+        <!-- Abstract background texture simulation -->
+        <div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(circle at 50% 50%, #ffffff 1px, transparent 1px); background-size: 50px 50px;"></div>
+        
+        <div class="relative z-10 content-width flex flex-col items-center">
+            <div class="pro-badge-dark border-white text-white mb-8 reveal">Fiscal Year End</div>
+            
+            <h2 class="text-7xl md:text-[120px] font-black tracking-tighter gold-gradient mb-8 leading-[0.9] reveal reveal-delay-1">
+                3 Months.<br>Zero Infections.
+            </h2>
+            
+            <p class="text-2xl md:text-4xl font-semibold text-[#a1a1a6] mb-6 reveal reveal-delay-2">
+                No HAPI, CLABSI, CAUTI, CDIFF, or MRSA.
+            </p>
+            
+            <p class="text-xl md:text-2xl font-medium text-white bg-white/10 px-8 py-4 rounded-full backdrop-blur-md reveal reveal-delay-3 inline-block">
+                Zero falls for September (knock on wood).
+            </p>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            
+            // 1. Initial Hero Animations
+            setTimeout(() => {
+                document.querySelectorAll('.hero-trigger').forEach(el => el.classList.add('active'));
+            }, 100);
+
+            // 2. Scroll Reveal & Number Counter Observer
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Add active class to fade/scale in
+                        entry.target.classList.add('active');
+                        
+                        // Check if this element contains a number counter
+                        if (entry.target.classList.contains('counter-wrap')) {
+                            const counter = entry.target.querySelector('.counter');
+                            if (counter && !counter.classList.contains('counted')) {
+                                const target = parseInt(counter.getAttribute('data-target'));
+                                animateValue(counter, 0, target, 2000); // 2 second animation
+                                counter.classList.add('counted'); // Prevent re-triggering
+                            }
+                        }
+                        
+                        // Optional: unobserve if we only want it to animate once
+                        // observer.unobserve(entry.target); 
+                    }
+                });
+            }, observerOptions);
+
+            // Select all elements that need to reveal
+            const revealElements = document.querySelectorAll('.reveal, .scale-reveal, .suspense-reveal');
+            revealElements.forEach(el => {
+                // Skip hero elements as they animate on load
+                if (!el.classList.contains('hero-trigger')) {
+                    observer.observe(el);
+                }
+            });
+
+            // 3. Number Counter Animation Function
+            function animateValue(obj, start, end, duration) {
+                let startTimestamp = null;
+                const step = (timestamp) => {
+                    if (!startTimestamp) startTimestamp = timestamp;
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                    
+                    // Ease-out cubic function for smooth deceleration
+                    const easeOut = 1 - Math.pow(1 - progress, 3);
+                    
+                    obj.innerHTML = Math.floor(easeOut * (end - start) + start);
+                    
+                    if (progress < 1) {
+                        window.requestAnimationFrame(step);
+                    } else {
+                        obj.innerHTML = end; // Ensure exact final value is hit
+                    }
+                };
+                window.requestAnimationFrame(step);
+            }
+        });
+    </script>
+</body>
+</html>
